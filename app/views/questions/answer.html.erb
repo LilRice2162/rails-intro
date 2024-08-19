@@ -1,5 +1,20 @@
-<h1>Stupid Coaching</h1>
-<%= params[:question] %>
-<%= "-You" %>
-<%= @answer %>
-<%= "-Your Coach" %>
+<h1 class="p-3 mb-2 ms-5">Stupid Coaching</h1>
+<figure class="p-3 mb-5 ms-5 border border-5 border-top-0 border-bottom-0 border-end-0">
+  <blockquote class="blockquote">
+    <%= params[:question]%>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    <%= "You" %> <cite title="Source Title"></cite>
+  </figcaption>
+</figure>
+
+<figure class="p-3 mb-5 ms-5 bg-warning-subtle text-warning-emphasis border border-5 border-top-0 border-bottom-0 border-end-0">
+  <blockquote class="blockquote">
+    <%= @answer %>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    <%= "Your Coach"%><cite title="Source Title"></cite>
+  </figcaption>
+</figure>
+
+  <%= link_to "Ask a new question", "/ask", class: "text-decoration-none  mb-5 ms-5" %>

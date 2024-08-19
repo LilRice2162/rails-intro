@@ -1,4 +1,12 @@
-<form action="answer" data-turbo="false">
+<%# <form action="answer" data-turbo="false">
   <input type="text" name="question">
   <input type="submit" value="Ask!">
+</form> %>
+<h1 class="p-4 mb-2 ms-5">Stupid Coaching</h1>
+<form class="form-inline" action="answer" data-turbo="false">
+  <label for="inputPassword2" class="sr-only mb-2 ms-5">Ask your coach anything:</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control p-4 mb-2 ms-5"  placeholder="your-question" name="question" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-primary" type="submit">Ask!</button>
+    </div>
 </form>
